@@ -4,9 +4,11 @@ import AccentButton from "./AccentButton";
 
 export default function Navbar() {
     return (
-      <div className="flex flex-row p-5 justify-between">
-        <div className="logo font-semibold">UbranGreen Tech</div>
-        <Controls />
+      <div className="flex flex-col lg:flex-row p-5 justify-between">
+        <div className="logo font-bold lg:font-semibold text-center p-5 lg:p-0">UbranGreen Tech</div>
+        <div className="flex justify-center">
+          <Controls />
+        </div>
         <AccentButton name="Contact Us" url="#" />
       </div>
     );

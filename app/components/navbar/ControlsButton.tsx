@@ -14,6 +14,7 @@ const ControlsButton: React.FC<ControlsButtonProps> = ({name, url, icon}) => {
                 <a className="px-1" href={url}>{name}</a>
                 <div className="bg-white p-2 rounded-full">
                     <Image
+                        className="min-w-3"
                         src={"/icons/"+ icon}
                         width={13}
                         height={13}
